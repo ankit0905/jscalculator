@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link type="text/css" href="cal.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id='main'>
+            <div class="input"><input id='textbox' type="text" /></div>
+            <br/>
+            <button class="eval1" id="clear" value="C" onclick='del()'><b>C</b></button>
+            <button class="eval1" id="ce" value="CE" onclick='display("")'><b>CE</b></button>
+            <button class="eval1" id="pi" value="pi" onclick="addValue('PI')"><b>pi</b></button>
+            <button class="eval1" id="e" value="e" onclick="addValue('E')"><b>e</b></button>
+            <br/>
+            <button class="num" id="one" value="1" onclick="addValue('1')"><b>1</b></button>
+            <button class="num" id="tow" value="2" onclick="addValue('2')"><b>2</b></button>
+            <button class="num" id="three" value="3" onclick="addValue('3')"><b>3</b></button>
+            <button class="sign" id="div" value="/" onclick="addValue('/')"><b>/</b></button>
+            <br/>
+            <button class="num" id="four" value="4" onclick="addValue('4')"><b>4</b></button>
+            <button class="num" id="five" value="5" onclick="addValue('5')"><b>5</b></button>
+            <button class="num" id="six" value="6" onclick="addValue('6')"><b>6</b></button>
+            <button class="sign" id="mul" value="*" onclick="addValue('*')"><b>*</b></button>
+            <br/>
+            <button class="num" id="seven" value="7" onclick="addValue('7')"><b>7</b></button>
+            <button class="num" id="eight" value="8" onclick="addValue('8')"><b>8</b></button>
+            <button class="num" id="nine" value="9" onclick="addValue('9')"><b>9</b></button>
+            <button class="sign" id="plus" value="+" onclick="addValue('+')"><b>+</b></button>
+            <br/>
+            <button class="num" id="dot" value="." onclick="addValue('.')"><b>.</b></button>
+            <button class="num" id="zero" value="0" onclick="addValue('0')"><b>0</b></button>
+            <button class="sign" id="equal" value="=" onclick="compute()"><b>=</b></button>     
+            <button class="sign" id="minus" value="-" onclick="addValue('-')"><b>-</b></button>
+            <br/>
+            <button class="eval" id="log" value="log" onclick="addValue('log')"><b>log</b></button>
+            <button class="eval" id="sqrt" value="sqrt" onclick="addValue('sqrt')"><b>sqrt</b></button>
+            <button class="eval" id="pow" value="pow" onclick="addValue('pow')"><b>pow</b></button>
+            <button class="eval" id="fact" value="comma" onclick="addValue(',')"><b>,</b></button> 
+            <button class="eval" id="par" value="(" onclick="addValue('(')"><b>(</b></button>
+            
+            <br/>
+            <button class="eval" id="sin" value="sin" onclick="addValue('sin(')"><b>sin</b></button>
+            <button class="eval" id="cos" value="cos" onclick="addValue('cos(')"><b>cos</b></button> 
+            <button class="eval" id="tan" value="tan" onclick="addValue('tan(')"><b>tan</b></button>
+            <button class="eval" id="mod" value="%" onclick="addValue('%')"><b>%</b></button>
+            <button class="eval" id="par" value=")" onclick="addValue(')')"><b>)</b></button>
+        </div>
+    </body>
+</html>

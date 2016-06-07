@@ -1,0 +1,124 @@
+body{
+    font-family: SFDigitalReadout-Light;
+    background-image: url('bg.jpg');
+}
+
+#main {
+    height: 565px;
+    width: 400px;
+    background-color: gray;
+    margin: auto;
+    border: 5px solid black;
+    align-self: center;
+    margin-top:80px;
+    border-radius: 10px;
+}
+
+#textbox{
+    height:100px;
+    width: 380px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    background-color: #bccd95;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+.num{
+    height:45px;
+    width:75px;
+    margin: 5px;
+    margin-left:15px;
+    margin-top:10px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    font-style: italic;
+    font-size:15px;
+}
+
+.sign{
+    height:50px;
+    width:65px;
+    margin: 5px;
+    margin-left: 18px;
+    background-color: orange;
+    font-style: italic;
+    font-size:15px;
+    border-radius: 5px;
+}
+
+.eval, .eval1{
+    height:45px;
+    width:75px;
+    margin: 5px;
+    margin-left: 15px;
+    background-color: darkseagreen;
+    font-size:15px;
+    border-radius: 5px;
+}
+
+#equal{
+    background-color: coral;
+    width:75px;
+    margin-left:15px;
+}
+
+#clear, #ce{
+    background-color: wheat;
+}
+
+#pi, #e{
+    background-color: dodgerblue;
+}
+
+.eval{
+    height:45px;
+    width:60px;
+    margin-left:11px;
+}
+
+.sign:hover{
+    background-color: black;
+    color:orange;
+    font-size:18px;
+    font-family:fantasy;
+}
+
+.num:hover{
+    background-color:black;
+    color:white;
+    font-size:18px;
+    font-family:cursive;
+}
+
+.eval:hover{
+    background-color: black;
+    color: green;
+    font-size:18px;
+    font-family:inherit;
+}
+
+#pi:hover, #e:hover{
+    background-color: black;
+    color:blue;
+    font-size:18px;
+}
+
+#clear:hover, #ce:hover{
+    background-color: black;
+    color:white;
+    font-size:18px;
+}
+
+button{
+    cursor:pointer;
+}
+
+#equal:hover{
+    background-color: black;
+    color:coral;
+    font-size:18px;
+}
