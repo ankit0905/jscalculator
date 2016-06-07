@@ -24,19 +24,27 @@ function addValue(val)
 }
 function compute() 
 { 
+    var arr=[],k=0, j=0;
     try 
     {   
         eq1="";
         for(i=0; i<eq2.length; i++){
             if(eq2[i]=='l' || eq2[i]=='t' || eq2[i]=='s' || eq2[i]=='c' || eq2[i]=='f' || eq2[i]=='p' || eq2[i]=='P'|| eq2[i]=='E'){
-                break;
+                arr[j++]=i;
+                i=i+3;
             }
         }
         //console.log(eq1);
-        if(i!=eq2.length)
-            eq1=eq2.splice(i, 0, "Math.")
-        else
+        for(k=0; k<arr.length; k++){
+            i=arr[k];
+            eq1=eq2.splice(i+5*k, 0, "Math.");
+            eq2=eq1;
+            console.log(eq1);
+            console.log(eq2);
+        }
+        if(k==0){
             eq1=eq2;
+        }
         //console.log(eq2);
         console.log(eq1);
         eq=eval(eq1);
@@ -45,6 +53,6 @@ function compute()
     } 
     catch(e) 
     {
-        display('Error') 
+        display('Error');
     }    
 } 
