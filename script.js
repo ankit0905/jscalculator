@@ -2,6 +2,16 @@ String.prototype.splice = function(idx, rem, str) {
     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
 };
 var eq="", eq2="", eq1="";
+function getRandomColor()
+{
+    var letters = '0123456789ABCDEF'.split('');             
+    var color = '#';                
+    for (var i = 0; i < 6; i++ ) 
+         {
+            color += letters[Math.round(Math.random() * 15)];      
+        }               
+    return color;           
+}       
 function display(val)
 {
     document.getElementById("textbox").value=val;
@@ -22,9 +32,25 @@ function addValue(val)
     console.log(eq2);
     document.getElementById("textbox").value+=val;
 }
+function color_c()
+        {
+            document.getElementById('one').style.backgroundColor=getRandomColor();
+            document.getElementById('two').style.backgroundColor=getRandomColor();
+            document.getElementById('three').style.backgroundColor=getRandomColor();
+            document.getElementById('four').style.backgroundColor=getRandomColor();
+            document.getElementById('five').style.backgroundColor=getRandomColor();
+            document.getElementById('six').style.backgroundColor=getRandomColor();
+            document.getElementById('seven').style.backgroundColor=getRandomColor();
+            document.getElementById('eight').style.backgroundColor=getRandomColor();
+            document.getElementById('nine').style.backgroundColor=getRandomColor();
+            document.getElementById('dot').style.backgroundColor=getRandomColor();
+            document.getElementById('zero').style.backgroundColor=getRandomColor();
+            }
+         
+
 function compute() 
 { 
-    var arr=[],k=0, j=0;
+    var arr=[],k=0, j=0;    
     try 
     {   
         eq1="";
